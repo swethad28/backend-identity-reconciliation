@@ -1,0 +1,17 @@
+POST http://127.0.0.1:8000/identify
+Content-Type: application/json
+
+{
+  "email": "doc1@zamazon.com",
+  "phoneNumber": "1234567890"
+}
+
+###
+
+POST http://127.0.0.1:8000/identify
+Content-Type: application/json
+
+{
+  "email": "d.chandra@zamazon.com",
+  "phoneNumber": "1234567890"
+}
