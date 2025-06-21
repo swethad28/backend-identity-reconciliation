@@ -56,11 +56,12 @@ Server will be running at:
 
 Accepts a POST request with the following JSON:
 
-json
+````json
 {
   "email": "example@zamazon.com",
   "phoneNumber": "1234567890"
 }
+````
 
 The backend:
 1. Checks if contact already exists
