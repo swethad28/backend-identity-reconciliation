@@ -78,13 +78,14 @@ curl -X POST http://127.0.0.1:8000/identify \
   -d '{"email": "doc1@zamazon.com", "phoneNumber": "1234567890"}'
 ```
 Response:
-json
+````json
 {
   "primaryContactId": 1,
   "emails": ["doc1@zamazon.com"],
   "phoneNumbers": ["1234567890"],
   "secondaryContactIds": []
 }
+````
 
  2. Same Email, New Phone
 
@@ -94,13 +95,14 @@ curl -X POST http://127.0.0.1:8000/identify \
   -d '{"email": "doc1@zamazon.com", "phoneNumber": "9998887777"}'
 ```
 Response:
-json
+````json
 {
   "primaryContactId": 1,
   "emails": ["doc1@zamazon.com"],
   "phoneNumbers": ["1234567890", "9998887777"],
   "secondaryContactIds": [2]
 }
+````
 
 3. Same Phone, New Email
 
@@ -110,13 +112,14 @@ curl -X POST http://127.0.0.1:8000/identify \
   -d '{"email": "chandra@hiddenlab.com", "phoneNumber": "1234567890"}'
 ```
 Response:
-json
+````json
 {
   "primaryContactId": 1,
   "emails": ["doc1@zamazon.com", "chandra@hiddenlab.com"],
   "phoneNumbers": ["1234567890", "9998887777"],
   "secondaryContactIds": [2, 3]
 }
+````
 
 Requirements
 Install all required packages with:
